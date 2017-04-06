@@ -30,8 +30,6 @@ class Message(db.Model):
     def __repr__(self):
         return '<User %r>' % self.username
 
-# Create the database
-db.create_all()
 
 
 @app.route('/postmessage', methods=["POST"])
